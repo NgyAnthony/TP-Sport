@@ -3,6 +3,5 @@ export class Model {
     title: string;
     description?: string;
     videoLink?: string;
-    mainImageLink?: string;
-    detail1ImageLink?: string;
+    ImageLink?: string;
 }
