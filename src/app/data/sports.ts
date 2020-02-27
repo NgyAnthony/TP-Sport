@@ -17,4 +17,10 @@ export const SPORTS = [
         description: 'Basketball is one of the biggest top 10 sports in the world. ',
         mainImageLink: '/football.jpg',
     },
+    {
+        id: 4,
+        title: 'Baseball',
+        description: 'Basketball is one of the biggest top 10 sports in the world. ',
+        mainImageLink: '/football.jpg',
+    },
 ];
