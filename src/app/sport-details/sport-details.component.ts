@@ -15,7 +15,7 @@ export class SportDetailsComponent implements OnInit {
   constructor(public router: Router) { }
 
   ngOnInit() {
-    this.requestedID = 1;
+    this.requestedID = 6;
   }
 
 }
