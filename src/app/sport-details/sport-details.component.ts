@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SPORTS } from '../data/sports';
+import { Model } from '../data/model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sport-details',
@@ -6,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sport-details.component.scss']
 })
 export class SportDetailsComponent implements OnInit {
+  sports: Model[] = SPORTS;
+  public requestedID: number;
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
+    this.requestedID = 1;
   }
 
 }
