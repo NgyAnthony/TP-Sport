@@ -4,4 +4,5 @@ export class Model {
     description?: string;
     videoLink?: string;
     ImageLink?: string;
+    color?: string;
 }

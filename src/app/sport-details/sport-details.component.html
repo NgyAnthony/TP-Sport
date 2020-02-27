@@ -1,0 +1,28 @@
+<ng-container *ngFor="let sport of sports">
+    <div class="container" *ngIf="sport.id == requestedID">
+        <div class="side-container" [ngStyle]="{'background-color': sport.color}">
+            <div class="mainText">
+                <h1 class="white">{{sport.title}}</h1>
+                <mat-divider class="mat-divider"></mat-divider>
+                <h2 class="white medium-weight">{{sport.description}}</h2>
+            </div>
+            <div class="mainImage" [ngStyle]="{'background-image': 'url(' + '/assets/menuImages/' + sport.ImageLink + ')'}"></div>
+        </div>
+        <div class="mainContent">
+            <div class="top">
+                <div class="left">
+                    <h2 class="center-text">Discover {{sport.title}}</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="right" [ngStyle]="{'background-image': 'url(' + '/assets/detailImages/' + sport.ImageLink + ')'}">
+                </div>
+            </div>
+            <mat-divider class="main-divider"></mat-divider>
+            <div class="bottom">
+                <div class="bottom-wrapper">
+                    <iframe class="video" [src]="'https://www.youtube.com/embed/' + sport.videoLink | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
