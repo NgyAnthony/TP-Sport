@@ -6,7 +6,6 @@ import { SportlistsComponent } from './sportlists/sportlists.component';
 const routes: Routes = [
   { path: 'detail', component: SportDetailsComponent},
   { path: '', component: SportlistsComponent }
-];
 
 @NgModule({
   imports: [
