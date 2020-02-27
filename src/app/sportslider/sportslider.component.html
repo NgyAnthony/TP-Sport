@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <button (click)="onPreviousClick()"><i class="material-icons">keyboard_arrow_left</i></button>
+    <div *ngFor="let sport of sports; let i = index;">
+        <div class="sportslider" *ngIf="i === currentSport">
+            <img routerLink="/detail/{{ sport.id }}" src="/assets/menuImages{{ sport.ImageLink }}" class="slider-image" alt="{{ sport.name }}">
+        </div>
+    </div>
+    <button (click)="onNextClick()" class="buttonCustom"><i class="material-icons">keyboard_arrow_right</i></button>
+</div>
